@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="">Sathya</a></div>
+        <ul>
+            <li><a href="#">Fivree Pro</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Become a sellar</a></li>
+            <li><a href="#">Sign in</a></li>
+            <button>Join</button>
+        </ul>
+        <div class="menu">
+         <i class="fa-solid fa-bars fa-sm"></i>
+        </div>
+    </nav>
+</body>
+<script>
+      const menu= document.querySelector('.menu')
+      const menulist= document.querySelector('nav ul')
+      menu.addEventListener('click',()=>{
+        menulist.classList.toggle('showmenu')
+      })
+
+</script>
+</html>
+
+
+
